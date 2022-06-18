@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+}
+.mainComponent .row{
+  background-color:#4F4F4F;
+  margin: -25px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.text{
+  font-size:20px;
+  color: #fff;
+  padding-top: 25px;
+}
+.iconText p{
+  padding: 20px 5px 0px 5px;
+  color: white;
+  display:inline-block;
+}
+.sidenav {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #BCBCBC;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sideNavIcons li{
+  margin: 50px 50px 50px -25px;
+  list-style: none;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: 50px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.musicPlayer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #5248FF;
+  color: white;
+  text-align: center;
+}
+.musicPlayer span img{
+  float: left;
+  height: 75px;
+  width: 75px;
+  padding: 5px 15px 5px 5px;
+  margin-left: 60px;
+}
+.footerIcons{
+  padding: 15px 0px 0px 0px;
+  margin: 20px;
+}
+.footerIcons span{
+  padding: 0px 50px 0px 50px;
+
+}
