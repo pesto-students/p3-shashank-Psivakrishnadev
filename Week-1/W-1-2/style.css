@@ -4,8 +4,15 @@
 body{
   margin: 0px;
 }
+:root {
+  --gray-primary: #4F4F4F;
+  --gray-light:#BCBCBC;
+  --white: #ffffff; 
+  --gray:#dddddd;
+}
+
 .mainComponent .row{
-  background-color:#4F4F4F;
+  background-color: var(--gray);
   margin: -25px;
 }
 .column {
@@ -24,12 +31,12 @@ body{
 }
 .text{
   font-size:20px;
-  color: #fff;
+  color: var(--white);
   padding-top: 25px;
 }
 .iconText p{
   padding: 20px 5px 0px 5px;
-  color: white;
+  color: var(--white);
   display:inline-block;
 }
 .sidenav {
@@ -39,7 +46,7 @@ body{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #BCBCBC;
+  background-color: var(--lgray);
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -55,13 +62,13 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid var(--lsgray);
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: var(--lsgray);
 }
 .musicPlayer {
   position: fixed;
@@ -69,7 +76,7 @@ tr:nth-child(even) {
   bottom: 0;
   width: 100%;
   background-color: #5248FF;
-  color: white;
+  color:var(--white);
   text-align: center;
 }
 .musicPlayer span img{
@@ -85,5 +92,4 @@ tr:nth-child(even) {
 }
 .footerIcons span{
   padding: 0px 50px 0px 50px;
-
 }
