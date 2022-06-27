@@ -1,0 +1,74 @@
+:root {
+  --red: #FF0000;
+  --yellow: #FFFF00;
+  --blue: #0000FF; 
+  --green:#00FF00;
+}
+
+.container{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.container .message{
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  top: 50%;
+  transform: translate(0 -50%);
+}
+
+.container .topLeft{
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0px;
+  left:0px;
+  background-color: var(--red);
+  transition: transform 500ms ease-in-out;
+}
+.container .topRight{
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 0px;
+  background-color: var(--yellow);
+  transition: transform 500ms ease-in-out;
+}
+.container .bottomLeft{
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left:0px;
+  top: 100px;
+  background-color: var(--blue);
+  transition: transform 500ms ease-in-out;
+}
+.container .bottomRight{
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  top: 100px;
+  background-color: var(--green);
+  transition: transform 500ms ease-in-out;
+}
+.container:hover .topLeft{
+  transform: rotate(90deg) translateY(100px)
+}
+.container:hover .topRight{
+  transform: rotate(-180deg) translateX(-100px)
+}
+.container:hover .bottomLeft{
+  transform: rotate(90deg) translateY(100px)
+}
+.container:hover .bottomRight{
+  transform: rotate(-180deg) translateX(-100px)
+}
